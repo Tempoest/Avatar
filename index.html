@@ -40,10 +40,10 @@
       </div>
       <div class="lang-box">
         <p class="lang-inf">ENG</p>
-        <label class="switch">
-          <input type="checkbox" />
-          <span class="slider"></span>
-        </label>
+        <div class="check">
+          <input id="check" type="checkbox" />
+          <label for="check"></label>
+        </div>
         <p class="lang-inf">UA</p>
       </div>
     </header>
@@ -60,23 +60,25 @@
             stays behind to become part of the People. Fight with us!
           </p>
           <button class="hero-button">Join clan</button>
-          <ul class="hero-icons list">
-            <li class="hero-icon">
-                <a href="https://www.instagram.com/avatar/" target="_blank">
-                    <img src="./images/inst-icon.svg" alt="inst icon">
-                </a>
-            </li>
-            <li class="hero-icon">
-                <a href="#">
-                    <img src="./images/twitter-icon.svg" alt="twitter icon">
-                </a>
-            </li>
-            <li class="hero-icon">
-                <a href="#">
-                    <img src="./images/youtube-icon.svg" alt="youtube icon">
-                </a>
-            </li>
-          </ul>
+          <div class="icons-box">
+            <ul class="hero-icons list">
+              <li class="hero-icon">
+                  <a href="https://www.instagram.com/avatar/" target="_blank">
+                      <img src="./images/inst-icon.svg" alt="inst icon">
+                  </a>
+              </li>
+              <li class="hero-icon">
+                  <a href="#">
+                      <img src="./images/twitter-icon.svg" alt="twitter icon">
+                  </a>
+              </li>
+              <li class="hero-icon">
+                  <a href="#">
+                      <img src="./images/youtube-icon.svg" alt="youtube icon">
+                  </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="words">
@@ -151,11 +153,28 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <img src="./images/logo.png" alt="avatar logo" class="footer-logo" />
-        <!-- <div class="line"></div> -->
-        <p class="footer-text">Q&A E-mail - - - - - - - - - - - - avatartwowqa@gmail.com</p>
-        <p class="footer-text">Cooperation E-mail - - - - - - - - - avatartwowcoop@gmail.com</p>
-        <p class="footer-text copyright">&copy;2023 Avatar: The Way Of Water. All rights reserved</p>
+        <div class="footer-pos">
+          <div class="help-logo">
+            <div class="logo-wrap">
+              <a href="index.html" class="footer-logo">
+                <img src="./images/logo.png" alt="avatar logo" class="logo" />
+              </a>
+            </div>
+          </div> 
+          <ul class="email-list list">
+            <li class="email-item">
+              <h3 class="email-title">Q&E E-mail</h3>
+              <img src="./images/email-line.svg" alt="line" class="email-img">
+              <a href="mailto:avatartwowqa@gmail.com" class="email-link link">avatartwowqa@gmail.com</a>
+            </li>
+            <li class="email-item coop">
+              <h3 class="email-title">Cooperation E-mail</h3>
+              <img src="./images/email-line-short.svg" alt="line" class="email-img">
+              <a href="mailto:avatarwowcoop@gmail.com" class="email-link link">avatarwowcoop@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <p class="copy">&copy2023 Avatar: The Way Of Water. All rights reserved</p>
       </div>
     </footer>
   </body>
