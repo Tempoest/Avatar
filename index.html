@@ -5,100 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Avatar</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Headland+One&family=Inter:wght@300;400;600&display=swap"
       rel="stylesheet"
-    />
+      />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
       integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
       crossorigin="anonymous"
-    />
-  </head>
+      />
+    <link rel="stylesheet" href="./css/styles.css" />
+    </head>
   <body>
     <header class="header">
       <div class="container header-pos">
-        <img src="./images/logo.png" alt="avatar logo" class="logo" />
+        <img src="./images/logo.png" alt="avatar logo" class="header-logo" />
         <nav class="nav-menu">
           <ul class="nav-list list">
             <li class="nav-item">
-              <a class="nav-item-link link" href="#">Main</a>
+              <a class="nav-item-link link" id="lng-main" href="#">Main</a>
             </li>
             <li class="nav-item">
-              <a class="nav-item-link link" href="#">About us</a>
+              <a class="nav-item-link link" id="lng-about" href="#">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-item-link link" href="#">Contacts</a>
+              <a class="nav-item-link link" id="lng-contacts" href="#">Contacts</a>
             </li>
           </ul>
         </nav>
-        <button class="header-button" type="button">Log In</button>
+        <button class="header-button" id="lng-login" type="button">Log In</button>
       </div>
       <div class="lang-box">
-        <p class="lang-inf">ENG</p>
-        <div class="check">
+        <span class="lang-inf">ENG</span>
+        <form class="check">
           <input id="check" type="checkbox" />
           <label for="check"></label>
-        </div>
-        <p class="lang-inf">UA</p>
+        </form>
+        <span class="lang-inf">UA</span>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="container">
-          <p class="hero-text">
-            Oe perlltxe hu tsamsiyu! Ngari hu Eywa salew tirea, tokx 'ì'awn slu
-            Na'viyä hapxì. Säwem nìayoeng!
-          </p>
-          <img src="./images/arrow.png" alt="arrow" class="hero-arrow" />
-          <p class="hero-text">
-            I'm speaking with the warrior! Your spirit goes with Eywa, your body
-            stays behind to become part of the People. Fight with us!
-          </p>
-          <button class="hero-button">Join clan</button>
-          <div class="icons-box">
-            <ul class="hero-icons list">
-              <li class="hero-icon">
-                  <a href="https://www.instagram.com/avatar/" target="_blank">
-                      <img src="./images/inst-icon.svg" alt="inst icon">
-                  </a>
-              </li>
-              <li class="hero-icon">
-                  <a href="#">
-                      <img src="./images/twitter-icon.svg" alt="twitter icon">
-                  </a>
-              </li>
-              <li class="hero-icon">
-                  <a href="#">
-                      <img src="./images/youtube-icon.svg" alt="youtube icon">
-                  </a>
-              </li>
-            </ul>
+          <div class="content-wrap">
+            <div class="text-wrap">
+              <p class="hero-text">
+                Oe perlltxe hu tsamsiyu! Ngari hu Eywa salew tirea, tokx 'ì'awn slu
+                Na'viyä hapxì. Säwem nìayoeng!
+              </p>
+              <img src="./images/arrow.png" alt="arrow" class="hero-arrow" />
+              <p class="hero-text" id="lng-herot">
+                I'm speaking with the warrior! Your spirit goes with Eywa, your body
+                stays behind to become part of the People. Fight with us!
+              </p>
+              <button class="hero-button" id="lng-join">Join clan</button>
+            </div>
+            <div class="icons-wrap">
+              <ul class="hero-icons list">
+                <li class="hero-icon">
+                    <a href="https://www.instagram.com/avatar/" target="_blank">
+                        <img src="./images/inst-icon.svg" alt="inst icon">
+                    </a>
+                </li>
+                <li class="hero-icon">
+                    <a href="#">
+                        <img src="./images/twitter-icon.svg" alt="twitter icon">
+                    </a>
+                </li>
+                <li class="hero-icon">
+                    <a href="#">
+                        <img src="./images/youtube-icon.svg" alt="youtube icon">
+                    </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
       <section class="words">
         <div class="container">
-            <h2 class="words-heading">“A LOT OF PEOPLE FROM THE SKY ARE GONNA COME THEY’RE GONNA COME LIKE A RAIN THAT NEVER ENDS.”</h2>
-            <h3 class="words-author">JAKE SULLY</h3>
-            <div class="end-box">
+            <h2 class="words-heading" id="lng-fquote">“A LOT OF PEOPLE FROM THE SKY ARE GONNA COME THEY’RE GONNA COME LIKE A RAIN THAT NEVER ENDS.”</h2>
+            <p class="words-author" id="lng-fauthor">JAKE SULLY</p>
+            <!-- <div class="end-box"> -->
                 <img src="./images/section-end.png" alt="section end" class="section-end">
-            </div>
+            <!-- </div> -->
         </div>
       </section>
       <section class="trailer">
         <div class="container">
-            <button class="trailer-button">WATCH TRAILER</button>
+            <button class="trailer-button" id="lng-trailer">WATCH TRAILER</button>
         </div>
       </section>
       <section class="words">
         <div class="container">
-            <h2 class="words-heading second-words">“ALL ENERGY IS ONLY BORROWED, AND ONE DAY YOU HAVE TO GIVE IT BACK.”</h2>
-            <h3 class="words-author">JAKE SULLY</h3>
+            <h2 class="words-heading second-words" id="lng-squote">“ALL ENERGY IS ONLY BORROWED, AND ONE DAY YOU HAVE TO GIVE IT BACK.”</h2>
+            <p class="words-author" id="lng-sauthor">JAKE SULLY</p>
             <div class="end-box">
                 <img src="./images/section-end.png" alt="section end" class="section-end">
             </div>
@@ -106,35 +110,35 @@
       </section>
       <section class="language">
         <div class="container">
-          <h2 class="lang-heading">Let's learn the Na'vi language</h2>
+          <h2 class="lang-heading" id="lng-languaget">Let's learn the Na'vi language</h2>
           <ul class="lang-cards list">
             <li class="lang-card">
-              <p class="card-text">Hello</p>
+              <p class="card-text" id="lng-trl1">Hello</p>
               <img src="./images/blue-arrow.png" alt="arrow" class="card-arrow">
               <p class="card-text">Kaltxì</p>
             </li>
             <li class="lang-card">
-              <p class="card-text">How Are You?</p>
+              <p class="card-text" id="lng-trl2">How Are You?</p>
               <img src="./images/section-end.png" alt="" class="card-bird">
               <p class="card-text">Ngaru lu fpom srak?</p>
             </li>
             <li class="lang-card">
-              <p class="card-text">I'm Well</p>
+              <p class="card-text" id="lng-trl3">I'm Well</p>
               <img src="./images/blue-arrow.png" alt="" class="card-arrow right-arrow">
               <p class="card-text">Lu fpom</p>
             </li>
             <li class="lang-card">
-              <p class="card-text">Thank you</p>
+              <p class="card-text" id="lng-trl4">Thank you</p>
               <img src="./images/blue-arrow.png" alt="arrow" class="card-arrow">
               <p class="card-text">Irayo si</p>
             </li>
             <li class="lang-card">
-              <p class="card-text">I See You</p>
+              <p class="card-text" id="lng-trl5">I See You</p>
               <img src="./images/section-end.png" alt="" class="card-bird">
               <p class="card-text">Oel ngati kameie</p>
             </li>
             <li class="lang-card">
-              <p class="card-text">Follow me!</p>
+              <p class="card-text" id="lng-trl6">Follow me!</p>
               <img src="./images/blue-arrow.png" alt="" class="card-arrow right-arrow">
               <p class="card-text">Nong oet!</p>
             </li>
@@ -143,8 +147,8 @@
       </section>
       <section class="words">
         <div class="container">
-            <h2 class="words-heading second-words">“OUR GREAT MOTHER DOES NOT TAKE SIDES, SHE PROTECTS ONLY THE BALANCE OF LIFE.”</h2>
-            <h3 class="words-author">NEYTIRI</h3>
+            <h2 class="words-heading second-words" id="lng-tquote">“OUR GREAT MOTHER DOES NOT TAKE SIDES, SHE PROTECTS ONLY THE BALANCE OF LIFE.”</h2>
+            <p class="words-author" id="lng-tauthor">NEYTIRI</p>
             <div class="end-box">
                 <img src="./images/section-end.png" alt="section end" class="section-end">
             </div>
@@ -174,8 +178,9 @@
             </li>
           </ul>
         </div>
-        <p class="copy">&copy2023 Avatar: The Way Of Water. All rights reserved</p>
+        <small class="copy">&copy2023 Avatar: The Way Of Water. All rights reserved</small>
       </div>
     </footer>
+    <script src="lang.js"></script>
   </body>
 </html>
