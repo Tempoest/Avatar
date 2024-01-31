@@ -53,11 +53,13 @@ img {
   border-bottom: 3px solid #FFF;
   justify-content: space-between;
   margin: 0 auto;
+  padding-left: 205px;
+  padding-right: 50px;
 }
 .nav-list {
   display: flex;
   column-gap: 38px;
-  margin-left: 168px;
+  margin-left: 184px;
 }
 
 .header-button {
@@ -90,7 +92,7 @@ img {
   justify-content: center;
   column-gap: 10px;
   align-items: center;
-  margin-right: 50px;
+  margin-left: 35px
 }
 .lang-inf {
   color: #FFF;
@@ -377,9 +379,7 @@ img {
 .footer .logo {
   margin-right: 80px;
 }
-.header-logo {
-  margin-left: 73px;
-}
+
 .logo-wrap::after {
   content: "";
   background-color: #FFF;
